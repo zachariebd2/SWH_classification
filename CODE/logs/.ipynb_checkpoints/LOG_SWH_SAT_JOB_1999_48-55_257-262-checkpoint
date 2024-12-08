@@ -1,8 +1,0 @@
-start
-
-Note: the module "conda" cannot be unloaded because it was not loaded.
-
-load conda/22.11.1  : OK 
-envs_dirs : /work/scratch/env/barrouz/conda_env/
-pkgs_dirs : /work/scratch/env/barrouz/pkgs_conda
-start get_swh_saturations.py
