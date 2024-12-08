@@ -1,0 +1,72 @@
+start
+
+
+Note: the module "conda" cannot be unloaded because it was not loaded.
+
+load conda/22.11.1  : OK 
+envs_dirs : /work/scratch/env/barrouz/conda_env/
+pkgs_dirs : /work/scratch/env/barrouz/pkgs_conda
+start unet_init.py
+/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: /work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/site-packages/torchvision/image.so: undefined symbol: _ZN5torch3jit17parseSchemaOrNameERKSs
+  warn(f"Failed to load image Python extension: {e}")
+cpu
+PARSE INPUT ARGUMENTS
+ACCESS CONFIGURATION FILE
+Traceback (most recent call last):
+  File "/home/ad/barrouz/code/app/unet_init.py", line 47, in <module>
+    config = json.load(f) 
+NameError: name 'json' is not defined
+[2024-10-06 17:35:37.832211372+00:00] cnes_level2/barrouz/22633387:  Account (env) = cnes_level2
+[2024-10-06 17:35:37.833402393+00:00] cnes_level2/barrouz/22633387:     User (env) = barrouz
+[2024-10-06 17:35:37.834517476+00:00] cnes_level2/barrouz/22633387:        GroupId = cesbio(426000053)
+[2024-10-06 17:35:37.835515290+00:00] cnes_level2/barrouz/22633387:         UserId = barrouz(9134)
+[2024-10-06 17:35:37.836449566+00:00] cnes_level2/barrouz/22633387:        Account = cnes_level2
+[2024-10-06 17:35:37.837306452+00:00] cnes_level2/barrouz/22633387:        Account = cnes_level2
+[2024-10-06 17:35:37.838156309+00:00] cnes_level2/barrouz/22633387:      Partition = cpu2022
+[2024-10-06 17:35:37.839088595+00:00] cnes_level2/barrouz/22633387:            QOS = cpu_2022_64
+[2024-10-06 17:35:37.839987611+00:00] cnes_level2/barrouz/22633387:        JobName = INIT_PYR_SPOT1
+[2024-10-06 17:35:37.840826647+00:00] cnes_level2/barrouz/22633387:     SubmitTime = 2024-10-06T17:34:52
+[2024-10-06 17:35:37.841890531+00:00] cnes_level2/barrouz/22633387:        RunTime = 00:00:00
+[2024-10-06 17:35:37.842760477+00:00] cnes_level2/barrouz/22633387:      TimeLimit = 00:30:00
+[2024-10-06 17:35:37.843621164+00:00] cnes_level2/barrouz/22633387:   EligibleTime = 2024-10-06T17:34:52
+[2024-10-06 17:35:37.844533699+00:00] cnes_level2/barrouz/22633387:      StartTime = 2024-10-06T17:34:55
+[2024-10-06 17:35:37.845433095+00:00] cnes_level2/barrouz/22633387:        EndTime = 2024-10-06T18:04:55
+[2024-10-06 17:35:37.846301402+00:00] cnes_level2/barrouz/22633387:       ExitCode = 0:0
+[2024-10-06 17:35:37.847168148+00:00] cnes_level2/barrouz/22633387:       NodeList = trex089
+[2024-10-06 17:35:37.848029485+00:00] cnes_level2/barrouz/22633387:      BatchHost = trex089
+[2024-10-06 17:35:37.848833012+00:00] cnes_level2/barrouz/22633387:           TRES = 
+[2024-10-06 17:35:37.849628530+00:00] cnes_level2/barrouz/22633387:        Command = /home/ad/barrouz/code/trex/run_unet_init_job.sh
+[2024-10-06 17:35:37.850430747+00:00] cnes_level2/barrouz/22633387:        WorkDir = /home/ad/barrouz/code
+[2024-10-06 17:35:37.851221785+00:00] cnes_level2/barrouz/22633387:         StdErr = /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+[2024-10-06 17:35:37.852025242+00:00] cnes_level2/barrouz/22633387:         StdOut = /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 22633387
+JobID                : 22633387
+JobName              : INIT_PYR_SPOT1
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex089 (1)
+State                : FAILED  (Exitcode=1:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-06T17:34:52
+Start time           : 2024-10-06T17:34:55
+End time             : 2024-10-06T17:35:28
+Elapsed time         : 00:00:33  (Timelimit=00:30:00, Suspended=00:00:00)
+TEI                  : 0:04:24
+Command              : /home/ad/barrouz/code/trex/run_unet_init_job.sh
+StdOut               : /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+StdErr               : /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        FAILED      1:0    2024-10-06T17:34:55 2024-10-06T17:35:28 00:00:33  00:04.377  00:04:24            11.25           0        0.00M      1996K          0    trex089      1 00:03.125  trex089
+   extern  | extern       COMPLETED   0:0    2024-10-06T17:34:55 2024-10-06T17:35:32 00:00:37  00:00.001  00:04:56           0.085K       0.00M        0.00M      1724K          0    trex089      1 00:00.001  trex089
+

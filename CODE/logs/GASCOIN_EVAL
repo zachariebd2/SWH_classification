@@ -1,0 +1,276 @@
+unload conda/22.11.1  : OK 
+
+La version 24.3.0 de conda est maintenant disponible via module.
+Elle sera le module par defaut à partir du 30 novembre.
+
+load conda/22.11.1  : OK 
+envs_dirs : /work/scratch/env/barrouz/conda_env/
+pkgs_dirs : /work/scratch/env/barrouz/pkgs_conda
+INPUT_PATH /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/DATA/HISTORICAL_SWH_SIMON_GASCOIN/LIST/list.txt
+OUTPUT_PATH /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/DATA/HISTORICAL_SWH_SIMON_GASCOIN/INFERENCE
+DEM_PATH /work/CAMPUS/etudes/Neige/DEM
+TCD_PATH /work/datalake/static_aux/TreeCoverDensity
+MODELS_PATH /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/MODELS_USED_FOR_UNET_PAPER/TCD-ONLY_SPOT4-NOSWIR
+KEEP_REFL 0
+MASK 1
+start
+/home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/DATA/HISTORICAL_SWH_SIMON_GASCOIN/LIST/list.txt
+muscate/SPOTWORLDHERITAGE/1991/06/14/SPOT4-HRVIR1-XS_20010614-110246-780_L1C_039-264-0_D_V1-0/SPOT4-HRVIR1-XS_20010614-110246-780_L1C_039-264-0_D_V1-0.zip
+activate s3 conda env
+start s2 script
+get credentials
+Traceback (most recent call last):
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 152, in generate_request_header
+    gss_response = self.context[host].step()
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/_utils.py", line 165, in check_last_err
+    return func(self, *args, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/_utils.py", line 131, in catch_and_return_token
+    return func(self, *args, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/sec_contexts.py", line 584, in step
+    return self._initiator_step(token=token)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/sec_contexts.py", line 606, in _initiator_step
+    res = rsec_contexts.init_sec_context(self._target_name, self._creds,
+  File "gssapi/raw/sec_contexts.pyx", line 188, in gssapi.raw.sec_contexts.init_sec_context
+gssapi.raw.misc.GSSError: Major (851968): Unspecified GSS failure.  Minor code may provide more information, Minor (2529638944): Ticket expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/get_swh.py", line 28, in <module>
+    credentials = assumerole.getCredentials("arn:aws:iam::732885638740:role/public-read-only-OT", Duration=7200)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/assumerole.py", line 46, in getCredentials
+    credentials = kerberos_authenticate(Sts_role_arn=Arn, Sts_role_duration_session=Duration)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/assumerole.py", line 124, in kerberos_authenticate
+    oidc_token = oidc_handler.get_token(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/oidc.py", line 143, in get_token
+    resp = requests.get(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/models.py", line 372, in prepare
+    self.prepare_auth(auth, url)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/models.py", line 603, in prepare_auth
+    r = auth(self)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 309, in __call__
+    auth_header = self.generate_request_header(None, host,
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 164, in generate_request_header
+    raise SPNEGOExchangeError("%s failed: %s" % (gss_stage, msg))
+requests_gssapi.exceptions.SPNEGOExchangeError: stepping context failed: Major (851968): Unspecified GSS failure.  Minor code may provide more information, Minor (2529638944): Ticket expired
+/tmp/slurm-24456014/INPUT/SPOT4-HRVIR1-XS_20010614-110246-780_L1C_039-264-0_D_V1-0.zip
+run script
+Traceback (most recent call last):
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/run_snow_swh.py", line 179, in <module>
+    args = args_parser.parse_args(sys.argv[1:])
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1768, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1800, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 2006, in _parse_known_args
+    start_index = consume_optional(start_index)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1946, in consume_optional
+    take_action(action, args, option_string)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1874, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/run_snow_swh.py", line 23, in __call__
+    raise argparse.ArgumentTypeError("Path '{}' does not exist".format(abs_path))
+argparse.ArgumentTypeError: Path '/tmp/slurm-24456014/INPUT/SPOT4-HRVIR1-XS_20010614-110246-780_L1C_039-264-0_D_V1-0.zip' does not exist
+muscate/SPOTWORLDHERITAGE/1991/06/14/SPOT4-HRVIR1-XS_20120528-100939-327_L1C_040-264-0_D_V1-0/SPOT4-HRVIR1-XS_20120528-100939-327_L1C_040-264-0_D_V1-0.zip
+activate s3 conda env
+start s2 script
+get credentials
+Traceback (most recent call last):
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 152, in generate_request_header
+    gss_response = self.context[host].step()
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/_utils.py", line 165, in check_last_err
+    return func(self, *args, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/_utils.py", line 131, in catch_and_return_token
+    return func(self, *args, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/sec_contexts.py", line 584, in step
+    return self._initiator_step(token=token)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/sec_contexts.py", line 606, in _initiator_step
+    res = rsec_contexts.init_sec_context(self._target_name, self._creds,
+  File "gssapi/raw/sec_contexts.pyx", line 188, in gssapi.raw.sec_contexts.init_sec_context
+gssapi.raw.misc.GSSError: Major (851968): Unspecified GSS failure.  Minor code may provide more information, Minor (2529638944): Ticket expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/get_swh.py", line 28, in <module>
+    credentials = assumerole.getCredentials("arn:aws:iam::732885638740:role/public-read-only-OT", Duration=7200)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/assumerole.py", line 46, in getCredentials
+    credentials = kerberos_authenticate(Sts_role_arn=Arn, Sts_role_duration_session=Duration)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/assumerole.py", line 124, in kerberos_authenticate
+    oidc_token = oidc_handler.get_token(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/oidc.py", line 143, in get_token
+    resp = requests.get(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/models.py", line 372, in prepare
+    self.prepare_auth(auth, url)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/models.py", line 603, in prepare_auth
+    r = auth(self)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 309, in __call__
+    auth_header = self.generate_request_header(None, host,
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 164, in generate_request_header
+    raise SPNEGOExchangeError("%s failed: %s" % (gss_stage, msg))
+requests_gssapi.exceptions.SPNEGOExchangeError: stepping context failed: Major (851968): Unspecified GSS failure.  Minor code may provide more information, Minor (2529638944): Ticket expired
+/tmp/slurm-24456014/INPUT/SPOT4-HRVIR1-XS_20120528-100939-327_L1C_040-264-0_D_V1-0.zip
+run script
+Traceback (most recent call last):
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/run_snow_swh.py", line 179, in <module>
+    args = args_parser.parse_args(sys.argv[1:])
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1768, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1800, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 2006, in _parse_known_args
+    start_index = consume_optional(start_index)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1946, in consume_optional
+    take_action(action, args, option_string)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1874, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/run_snow_swh.py", line 23, in __call__
+    raise argparse.ArgumentTypeError("Path '{}' does not exist".format(abs_path))
+argparse.ArgumentTypeError: Path '/tmp/slurm-24456014/INPUT/SPOT4-HRVIR1-XS_20120528-100939-327_L1C_040-264-0_D_V1-0.zip' does not exist
+muscate/SPOTWORLDHERITAGE/1991/06/14/SPOT4-HRVIR2-XS_20010530-105104-700_L1C_043-264-0_D_V1-0/SPOT4-HRVIR2-XS_20010530-105104-700_L1C_043-264-0_D_V1-0.zip
+activate s3 conda env
+start s2 script
+get credentials
+Traceback (most recent call last):
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 152, in generate_request_header
+    gss_response = self.context[host].step()
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/_utils.py", line 165, in check_last_err
+    return func(self, *args, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/_utils.py", line 131, in catch_and_return_token
+    return func(self, *args, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/sec_contexts.py", line 584, in step
+    return self._initiator_step(token=token)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/gssapi/sec_contexts.py", line 606, in _initiator_step
+    res = rsec_contexts.init_sec_context(self._target_name, self._creds,
+  File "gssapi/raw/sec_contexts.pyx", line 188, in gssapi.raw.sec_contexts.init_sec_context
+gssapi.raw.misc.GSSError: Major (851968): Unspecified GSS failure.  Minor code may provide more information, Minor (2529638944): Ticket expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/get_swh.py", line 28, in <module>
+    credentials = assumerole.getCredentials("arn:aws:iam::732885638740:role/public-read-only-OT", Duration=7200)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/assumerole.py", line 46, in getCredentials
+    credentials = kerberos_authenticate(Sts_role_arn=Arn, Sts_role_duration_session=Duration)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/assumerole.py", line 124, in kerberos_authenticate
+    oidc_token = oidc_handler.get_token(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/assumerole/oidc.py", line 143, in get_token
+    resp = requests.get(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/models.py", line 372, in prepare
+    self.prepare_auth(auth, url)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests/models.py", line 603, in prepare_auth
+    r = auth(self)
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 309, in __call__
+    auth_header = self.generate_request_header(None, host,
+  File "/softs/rh8/conda-envs/s3-env/lib/python3.10/site-packages/requests_gssapi/gssapi_.py", line 164, in generate_request_header
+    raise SPNEGOExchangeError("%s failed: %s" % (gss_stage, msg))
+requests_gssapi.exceptions.SPNEGOExchangeError: stepping context failed: Major (851968): Unspecified GSS failure.  Minor code may provide more information, Minor (2529638944): Ticket expired
+/tmp/slurm-24456014/INPUT/SPOT4-HRVIR2-XS_20010530-105104-700_L1C_043-264-0_D_V1-0.zip
+run script
+Traceback (most recent call last):
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/run_snow_swh.py", line 179, in <module>
+    args = args_parser.parse_args(sys.argv[1:])
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1768, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1800, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 2006, in _parse_known_args
+    start_index = consume_optional(start_index)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1946, in consume_optional
+    take_action(action, args, option_string)
+  File "/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/argparse.py", line 1874, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/app/run_snow_swh.py", line 23, in __call__
+    raise argparse.ArgumentTypeError("Path '{}' does not exist".format(abs_path))
+argparse.ArgumentTypeError: Path '/tmp/slurm-24456014/INPUT/SPOT4-HRVIR2-XS_20010530-105104-700_L1C_043-264-0_D_V1-0.zip' does not exist
+end
+[2024-10-24 18:43:10.342834104+00:00] cnes_level2/barrouz/24456014:  Account (env) = cnes_level2
+[2024-10-24 18:43:10.344024686+00:00] cnes_level2/barrouz/24456014:     User (env) = barrouz
+[2024-10-24 18:43:10.345170109+00:00] cnes_level2/barrouz/24456014:        GroupId = cesbio(426000053)
+[2024-10-24 18:43:10.346379542+00:00] cnes_level2/barrouz/24456014:         UserId = barrouz(9134)
+[2024-10-24 18:43:10.347479024+00:00] cnes_level2/barrouz/24456014:        Account = cnes_level2
+[2024-10-24 18:43:10.348591637+00:00] cnes_level2/barrouz/24456014:        Account = cnes_level2
+[2024-10-24 18:43:10.349683949+00:00] cnes_level2/barrouz/24456014:      Partition = cpu2022
+[2024-10-24 18:43:10.350769352+00:00] cnes_level2/barrouz/24456014:            QOS = cpu_2022_64
+[2024-10-24 18:43:10.351875685+00:00] cnes_level2/barrouz/24456014:        JobName = GASCOIN_EVAL
+[2024-10-24 18:43:10.352977977+00:00] cnes_level2/barrouz/24456014:     SubmitTime = 2024-10-24T15:25:48
+[2024-10-24 18:43:10.354086480+00:00] cnes_level2/barrouz/24456014:        RunTime = 00:00:01
+[2024-10-24 18:43:10.355199512+00:00] cnes_level2/barrouz/24456014:      TimeLimit = 00:10:00
+[2024-10-24 18:43:10.356347235+00:00] cnes_level2/barrouz/24456014:   EligibleTime = 2024-10-24T15:25:48
+[2024-10-24 18:43:10.357497478+00:00] cnes_level2/barrouz/24456014:      StartTime = 2024-10-24T18:42:01
+[2024-10-24 18:43:10.358593170+00:00] cnes_level2/barrouz/24456014:        EndTime = 2024-10-24T18:52:01
+[2024-10-24 18:43:10.359726853+00:00] cnes_level2/barrouz/24456014:       ExitCode = 0:0
+[2024-10-24 18:43:10.360839986+00:00] cnes_level2/barrouz/24456014:       NodeList = trex010
+[2024-10-24 18:43:10.361947028+00:00] cnes_level2/barrouz/24456014:      BatchHost = trex010
+[2024-10-24 18:43:10.363137281+00:00] cnes_level2/barrouz/24456014:           TRES = 
+[2024-10-24 18:43:10.364319304+00:00] cnes_level2/barrouz/24456014:        Command = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/trex/run_snow_swh_job.sh
+[2024-10-24 18:43:10.365428797+00:00] cnes_level2/barrouz/24456014:        WorkDir = /work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION
+[2024-10-24 18:43:10.366542799+00:00] cnes_level2/barrouz/24456014:         StdErr = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/GASCOIN_EVAL
+[2024-10-24 18:43:10.367966672+00:00] cnes_level2/barrouz/24456014:         StdOut = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/GASCOIN_EVAL
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 24456014
+JobID                : 24456014
+JobName              : GASCOIN_EVAL
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex010 (1)
+State                : COMPLETED  (Exitcode=0:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-24T15:25:48
+Start time           : 2024-10-24T18:42:01
+End time             : 2024-10-24T18:43:07
+Elapsed time         : 00:01:06  (Timelimit=00:10:00, Suspended=00:00:00)
+TEI                  : 0:08:48
+Command              : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/trex/run_snow_swh_job.sh
+StdOut               : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/GASCOIN_EVAL
+StdErr               : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/GASCOIN_EVAL
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        COMPLETED   0:0    2024-10-24T18:42:01 2024-10-24T18:43:07 00:01:06  00:07.571  00:08:48        0.231875K      86.78M        0.04M     45108K          0    trex010      1 00:04.942  trex010
+   extern  | extern       COMPLETED   0:0    2024-10-24T18:42:01 2024-10-24T18:43:07 00:01:06  00:00.001  00:08:48           0.305K       0.00M        0.00M       904K          0    trex010      1 00:00:00   trex010
+

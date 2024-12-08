@@ -1,0 +1,58 @@
+start
+
+start get_hillshade.py
+/var/spool/slurmd/job22329814/slurm_script: line 20: python: command not found
+[2024-10-02 18:03:11.711445237+00:00] cnes_level2/barrouz/22329814:  Account (env) = cnes_level2
+[2024-10-02 18:03:11.712797839+00:00] cnes_level2/barrouz/22329814:     User (env) = barrouz
+[2024-10-02 18:03:11.714170941+00:00] cnes_level2/barrouz/22329814:        GroupId = cesbio(426000053)
+[2024-10-02 18:03:11.715593383+00:00] cnes_level2/barrouz/22329814:         UserId = barrouz(9134)
+[2024-10-02 18:03:11.717139523+00:00] cnes_level2/barrouz/22329814:        Account = cnes_level2
+[2024-10-02 18:03:11.718403496+00:00] cnes_level2/barrouz/22329814:        Account = cnes_level2
+[2024-10-02 18:03:11.719588628+00:00] cnes_level2/barrouz/22329814:      Partition = cpu2022
+[2024-10-02 18:03:11.720740351+00:00] cnes_level2/barrouz/22329814:            QOS = cpu_2022_64
+[2024-10-02 18:03:11.721930434+00:00] cnes_level2/barrouz/22329814:        JobName = HILLSHADE
+[2024-10-02 18:03:11.723085937+00:00] cnes_level2/barrouz/22329814:     SubmitTime = 2024-10-02T18:02:23
+[2024-10-02 18:03:11.724205550+00:00] cnes_level2/barrouz/22329814:        RunTime = 00:00:00
+[2024-10-02 18:03:11.725311454+00:00] cnes_level2/barrouz/22329814:      TimeLimit = 00:05:00
+[2024-10-02 18:03:11.726471837+00:00] cnes_level2/barrouz/22329814:   EligibleTime = 2024-10-02T18:02:23
+[2024-10-02 18:03:11.727632160+00:00] cnes_level2/barrouz/22329814:      StartTime = 2024-10-02T18:03:05
+[2024-10-02 18:03:11.728756563+00:00] cnes_level2/barrouz/22329814:        EndTime = 2024-10-02T18:08:05
+[2024-10-02 18:03:11.729871216+00:00] cnes_level2/barrouz/22329814:       ExitCode = 0:0
+[2024-10-02 18:03:11.730982830+00:00] cnes_level2/barrouz/22329814:       NodeList = trex041
+[2024-10-02 18:03:11.732104683+00:00] cnes_level2/barrouz/22329814:      BatchHost = trex041
+[2024-10-02 18:03:11.733249276+00:00] cnes_level2/barrouz/22329814:           TRES = 
+[2024-10-02 18:03:11.734382179+00:00] cnes_level2/barrouz/22329814:        Command = /home/ad/barrouz/code/trex/get_hillshade_job.sh
+[2024-10-02 18:03:11.735525442+00:00] cnes_level2/barrouz/22329814:        WorkDir = /home/ad/barrouz/code
+[2024-10-02 18:03:11.736614996+00:00] cnes_level2/barrouz/22329814:         StdErr = /home/ad/barrouz/code/logs/LOG_HILLSHADE
+[2024-10-02 18:03:11.737730569+00:00] cnes_level2/barrouz/22329814:         StdOut = /home/ad/barrouz/code/logs/LOG_HILLSHADE
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 22329814
+JobID                : 22329814
+JobName              : HILLSHADE
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex041 (1)
+State                : FAILED  (Exitcode=127:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-02T18:02:23
+Start time           : 2024-10-02T18:03:05
+End time             : 2024-10-02T18:03:07
+Elapsed time         : 00:00:02  (Timelimit=00:05:00, Suspended=00:00:00)
+TEI                  : 0:00:02
+Command              : /home/ad/barrouz/code/trex/get_hillshade_job.sh
+StdOut               : /home/ad/barrouz/code/logs/LOG_HILLSHADE
+StdErr               : /home/ad/barrouz/code/logs/LOG_HILLSHADE
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        FAILED      127:0  2024-10-02T18:03:05 2024-10-02T18:03:07 00:00:02  00:00.006  00:00:02              0.0           0            0      1996K          0    trex041      1 00:00.001  trex041
+   extern  | extern       COMPLETED   0:0    2024-10-02T18:03:05 2024-10-02T18:03:07 00:00:02  00:00.001  00:00:02          0.84375           0            0      1740K          0    trex041      1 00:00:00   trex041
+

@@ -1,0 +1,962 @@
+{
+    "LANDSAT": {
+        "LANDSAT1": {
+            "MSS": {
+                "BANDS": {
+                    "4": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 558.5,
+                        "BAND WIDTH": 211,
+                        "RESOLUTION": 60
+                    },
+                    "5": {
+                        "NAME": "RED",
+                        "BAND CENTER": 654.5,
+                        "BAND WIDTH": 205,
+                        "RESOLUTION": 60
+                    },
+                    "6": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 761.5,
+                        "BAND WIDTH": 217,
+                        "RESOLUTION": 60
+                    },
+                    "7": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 972,
+                        "BAND WIDTH": 444,
+                        "RESOLUTION": 60
+                    }
+                }
+            }
+        },
+        "LANDSAT2": {
+            "MSS": {
+                "BANDS": {
+                    "4": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 551,
+                        "BAND WIDTH": 196,
+                        "RESOLUTION": 60
+                    },
+                    "5": {
+                        "NAME": "RED",
+                        "BAND CENTER": 672,
+                        "BAND WIDTH": 166,
+                        "RESOLUTION": 60
+                    },
+                    "6": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 755.5,
+                        "BAND WIDTH": 201,
+                        "RESOLUTION": 60
+                    },
+                    "7": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 964,
+                        "BAND WIDTH": 398,
+                        "RESOLUTION": 60
+                    }
+                }
+            }
+        },
+        "LANDSAT3": {
+            "MSS": {
+                "BANDS": {
+                    "4": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 551,
+                        "BAND WIDTH": 204,
+                        "RESOLUTION": 60
+                    },
+                    "5": {
+                        "NAME": "RED",
+                        "BAND CENTER": 653,
+                        "BAND WIDTH": 198,
+                        "RESOLUTION": 60
+                    },
+                    "6": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 751.5,
+                        "BAND WIDTH": 197,
+                        "RESOLUTION": 60
+                    },
+                    "7": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 977.5,
+                        "BAND WIDTH": 375,
+                        "RESOLUTION": 60
+                    }
+                }
+            }
+        },
+        "LANDSAT4": {
+            "MSS": {
+                "BANDS": {
+                    "1": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 554.5,
+                        "BAND WIDTH": 183,
+                        "RESOLUTION": 60
+                    },
+                    "2": {
+                        "NAME": "RED",
+                        "BAND CENTER": 662,
+                        "BAND WIDTH": 158,
+                        "RESOLUTION": 60
+                    },
+                    "3": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 760.5,
+                        "BAND WIDTH": 165,
+                        "RESOLUTION": 60
+                    },
+                    "4": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 933.5,
+                        "BAND WIDTH": 331,
+                        "RESOLUTION": 60
+                    }
+                }
+            },
+            "TM": {
+                "BANDS": {
+                    "1": {
+                        "NAME": "BLUE",
+                        "BAND CENTER": 481,
+                        "BAND WIDTH": 138,
+                        "RESOLUTION": 30
+                    },
+                    "2": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 573,
+                        "BAND WIDTH": 144,
+                        "RESOLUTION": 30
+                    },
+                    "3": {
+                        "NAME": "RED",
+                        "BAND CENTER": 660,
+                        "BAND WIDTH": 160,
+                        "RESOLUTION": 30
+                    },
+                    "4": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 837.5,
+                        "BAND WIDTH": 215,
+                        "RESOLUTION": 30
+                    },
+                    "5": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 1697,
+                        "BAND WIDTH": 386,
+                        "RESOLUTION": 30
+                    },
+                    "7": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 2200,
+                        "BAND WIDTH": 400,
+                        "RESOLUTION": 30
+                    }
+                }
+            }
+        },
+        "LANDSAT5": {
+            "MSS": {
+                "BANDS": {
+                    "1": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 559.5,
+                        "BAND WIDTH": 177,
+                        "RESOLUTION": 60
+                    },
+                    "2": {
+                        "NAME": "RED",
+                        "BAND CENTER": 652,
+                        "BAND WIDTH": 144,
+                        "RESOLUTION": 60
+                    },
+                    "3": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 761.5,
+                        "BAND WIDTH": 173,
+                        "RESOLUTION": 60
+                    },
+                    "4": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 934.5,
+                        "BAND WIDTH": 337,
+                        "RESOLUTION": 60
+                    }
+                }
+            },
+            "TM": {
+                "BANDS": {
+                    "1": {
+                        "NAME": "BLUE",
+                        "BAND CENTER": 485,
+                        "BAND WIDTH": 130,
+                        "RESOLUTION": 30
+                    },
+                    "2": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 573,
+                        "BAND WIDTH": 144,
+                        "RESOLUTION": 30
+                    },
+                    "3": {
+                        "NAME": "RED",
+                        "BAND CENTER": 660,
+                        "BAND WIDTH": 160,
+                        "RESOLUTION": 30
+                    },
+                    "4": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 837.5,
+                        "BAND WIDTH": 215,
+                        "RESOLUTION": 30
+                    },
+                    "5": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 1697,
+                        "BAND WIDTH": 386,
+                        "RESOLUTION": 30
+                    },
+                    "7": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 2197.5,
+                        "BAND WIDTH": 395,
+                        "RESOLUTION": 30
+                    }
+                }
+            }
+        },
+        "LANDSAT7": {
+            "ETM": {
+                "BANDS": {
+                    "1": {
+                        "NAME": "BLUE",
+                        "BAND CENTER": 477.5,
+                        "BAND WIDTH": 85,
+                        "RESOLUTION": 30
+                    },
+                    "2": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 562,
+                        "BAND WIDTH": 124,
+                        "RESOLUTION": 30
+                    },
+                    "3": {
+                        "NAME": "RED",
+                        "BAND CENTER": 659,
+                        "BAND WIDTH": 90,
+                        "RESOLUTION": 30
+                    },
+                    "4": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 827,
+                        "BAND WIDTH": 174,
+                        "RESOLUTION": 30
+                    },
+                    "5": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 1652.5,
+                        "BAND WIDTH": 277,
+                        "RESOLUTION": 30
+                    },
+                    "7": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 2193.5,
+                        "BAND WIDTH": 385,
+                        "RESOLUTION": 30
+                    },
+                    "8": {
+                        "NAME": "pan",
+                        "BAND CENTER": 717,
+                        "BAND WIDTH": 430,
+                        "RESOLUTION": 15
+                    }
+                }
+            }
+        },
+        "LANDSAT8": {
+            "OLI": {
+                "BANDS": {
+                    "1": {
+                        "NAME": "aerosol",
+                        "BAND CENTER": 443,
+                        "BAND WIDTH": 32,
+                        "RESOLUTION": 30
+                    },
+                    "2": {
+                        "NAME": "BLUE",
+                        "BAND CENTER": 482,
+                        "BAND WIDTH": 92,
+                        "RESOLUTION": 30
+                    },
+                    "3": {
+                        "NAME": "GREEN",
+                        "BAND CENTER": 561,
+                        "BAND WIDTH": 98,
+                        "RESOLUTION": 30
+                    },
+                    "4": {
+                        "NAME": "RED",
+                        "BAND CENTER": 658,
+                        "BAND WIDTH": 66,
+                        "RESOLUTION": 30
+                    },
+                    "5": {
+                        "NAME": "NIR",
+                        "BAND CENTER": 864.5,
+                        "BAND WIDTH": 71,
+                        "RESOLUTION": 30
+                    },
+                    "6": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 1606,
+                        "BAND WIDTH": 182,
+                        "RESOLUTION": 30
+                    },
+                    "7": {
+                        "NAME": "SWIR",
+                        "BAND CENTER": 2196,
+                        "BAND WIDTH": 318,
+                        "RESOLUTION": 30
+                    },
+                    "8": {
+                        "NAME": "pan",
+                        "BAND CENTER": 590,
+                        "BAND WIDTH": 204,
+                        "RESOLUTION": 15
+                    },
+                    "9": {
+                        "NAME": "cirrus",
+                        "BAND CENTER": 1374.5,
+                        "BAND WIDTH": 69,
+                        "RESOLUTION": 30
+                    }
+                }
+            }
+        }
+    },
+    "SWH": {
+        "SPOT1": {
+            "INSTRUMENTS": {
+                "HRV1": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        }
+                    }
+                },
+                "HRV2": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        }
+                    }
+                }
+            },
+            "PARAMS": {
+                "GKDE": {
+                    "ALP": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT1_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT1_GKDE_MIN_path.sav"
+                    },
+                    "PYR": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT1_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT1_GKDE_MIN_path.sav"
+                    }
+                }
+            }
+        },
+        "SPOT2": {
+            "INSTRUMENTS": {
+                "HRV1": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        }
+                    }
+                },
+                "HRV2": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        }
+                    }
+                }
+            },
+            "PARAMS": {
+                "GKDE": {
+                    "ALP": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT2_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT2_GKDE_MIN_path.sav"
+                    },
+                    "PYR": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT2_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT2_GKDE_MIN_path.sav"
+                    }
+                }
+            }
+        },
+        "SPOT3": {
+            "INSTRUMENTS": {
+                "HRV1": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        }
+                    }
+                },
+                "HRV2": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        }
+                    }
+                }
+            },
+            "PARAMS": {
+                "GKDE": {
+                    "ALP": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT3_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT3_GKDE_MIN_path.sav"
+                    },
+                    "PYR": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT3_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT3_GKDE_MIN_path.sav"
+                    }
+                }
+            }
+        },
+        "SPOT4": {
+            "INSTRUMENTS": {
+                "HRVIR1": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        },
+                        "4": {
+                            "NAME": "SWIR",
+                            "ID": "SWIR",
+                            "BAND CENTER": 1665,
+                            "BAND WIDTH": 170,
+                            "RESOLUTION": 20
+                        }
+                    }
+                },
+                "HRVIR2": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 20
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 20
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 20
+                        },
+                        "4": {
+                            "NAME": "SWIR",
+                            "ID": "SWIR",
+                            "BAND CENTER": 1665,
+                            "BAND WIDTH": 170,
+                            "RESOLUTION": 20
+                        }
+                    }
+                }
+            },
+            "PARAMS": {
+                "GKDE": {
+                    "ALP": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT4_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT4_GKDE_MIN_path.sav"
+                    },
+                    "PYR": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT4_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT4_GKDE_MIN_path.sav"
+                    }
+                }
+            }
+        },
+        "SPOT5": {
+            "INSTRUMENTS": {
+                "HRG1": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 10
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 10
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 10
+                        },
+                        "4": {
+                            "NAME": "SWIR",
+                            "ID": "SWIR",
+                            "BAND CENTER": 1665,
+                            "BAND WIDTH": 170,
+                            "RESOLUTION": 20
+                        }
+                    }
+                },
+                "HRG2": {
+                    "BANDS": {
+                        "1": {
+                            "NAME": "GREEN",
+                            "ID": "XS1",
+                            "BAND CENTER": 545,
+                            "BAND WIDTH": 90,
+                            "RESOLUTION": 10
+                        },
+                        "2": {
+                            "NAME": "RED",
+                            "ID": "XS2",
+                            "BAND CENTER": 645,
+                            "BAND WIDTH": 70,
+                            "RESOLUTION": 10
+                        },
+                        "3": {
+                            "NAME": "NIR",
+                            "ID": "XS3",
+                            "BAND CENTER": 835,
+                            "BAND WIDTH": 110,
+                            "RESOLUTION": 10
+                        },
+                        "4": {
+                            "NAME": "SWIR",
+                            "ID": "SWIR",
+                            "BAND CENTER": 1665,
+                            "BAND WIDTH": 170,
+                            "RESOLUTION": 20
+                        }
+                    }
+                }
+            },
+            "PARAMS": {
+                "GKDE": {
+                    "ALP": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT5_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/ALP_SPOT5_GKDE_MIN_path.sav"
+                    },
+                    "PYR": {
+                        "SAT": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT5_GKDE_SAT_path.sav",
+                        "MIN": "/work/CAMPUS/etudes/Neige/CoSIMS/zacharie/UNET_PROJECTS/REFL_ANALYSIS/SPOT/PYR_SPOT5_GKDE_MIN_path.sav"
+                    }
+                }
+            }
+        }
+    },
+    "TERRA": {
+        "ASTER": {
+            "BANDS": {
+                "1": {
+                    "NAME": "GREEN",
+                    "BAND CENTER": 564,
+                    "BAND WIDTH": 160,
+                    "RESOLUTION": 15
+                },
+                "2": {
+                    "NAME": "RED",
+                    "BAND CENTER": 660.5,
+                    "BAND WIDTH": 141,
+                    "RESOLUTION": 15
+                },
+                "3N": {
+                    "NAME": "NIR",
+                    "BAND CENTER": 818,
+                    "BAND WIDTH": 196,
+                    "RESOLUTION": 15
+                },
+                "3B": {
+                    "NAME": "NIR BWD",
+                    "BAND CENTER": 818,
+                    "BAND WIDTH": 180,
+                    "RESOLUTION": 15
+                },
+                "4": {
+                    "NAME": "SWIR",
+                    "BAND CENTER": 1669,
+                    "BAND WIDTH": 198,
+                    "RESOLUTION": 30
+                },
+                "5": {
+                    "NAME": "SWIR",
+                    "BAND CENTER": 2202,
+                    "BAND WIDTH": 164,
+                    "RESOLUTION": 30
+                },
+                "6": {
+                    "NAME": "SWIR",
+                    "BAND CENTER": 2223,
+                    "BAND WIDTH": 146,
+                    "RESOLUTION": 30
+                },
+                "7": {
+                    "NAME": "SWIR",
+                    "BAND CENTER": 2301,
+                    "BAND WIDTH": 182,
+                    "RESOLUTION": 30
+                },
+                "8": {
+                    "NAME": "SWIR",
+                    "BAND CENTER": 2368,
+                    "BAND WIDTH": 240,
+                    "RESOLUTION": 30
+                },
+                "9": {
+                    "NAME": "SWIR",
+                    "BAND CENTER": 2416,
+                    "BAND WIDTH": 240,
+                    "RESOLUTION": 30
+                }
+            }
+        }
+    },
+    "SENTINEL2A": {
+        "MSI": {
+            "BANDS": {
+                "1": {
+                    "NAME": "aerosol",
+                    "ID": "B01",
+                    "BAND CENTER": 442.7,
+                    "BAND WIDTH": 21,
+                    "RESOLUTION": 60
+                },
+                "2": {
+                    "NAME": "BLUE",
+                    "ID": "B02",
+                    "BAND CENTER": 492.4,
+                    "BAND WIDTH": 66,
+                    "RESOLUTION": 10
+                },
+                "3": {
+                    "NAME": "GREEN",
+                    "ID": "B03",
+                    "BAND CENTER": 559.8,
+                    "BAND WIDTH": 36,
+                    "RESOLUTION": 10
+                },
+                "4": {
+                    "NAME": "RED",
+                    "ID": "B04",
+                    "BAND CENTER": 664.5,
+                    "BAND WIDTH": 31,
+                    "RESOLUTION": 10
+                },
+                "5": {
+                    "NAME": "vegetation",
+                    "ID": "B05",
+                    "BAND CENTER": 704.1,
+                    "BAND WIDTH": 15,
+                    "RESOLUTION": 20
+                },
+                "6": {
+                    "NAME": "vegetation",
+                    "ID": "B06",
+                    "BAND CENTER": 740.5,
+                    "BAND WIDTH": 15,
+                    "RESOLUTION": 20
+                },
+                "7": {
+                    "NAME": "vegetation",
+                    "ID": "B07",
+                    "BAND CENTER": 782.8,
+                    "BAND WIDTH": 20,
+                    "RESOLUTION": 20
+                },
+                "8": {
+                    "NAME": "NIR",
+                    "ID": "B08",
+                    "BAND CENTER": 832.8,
+                    "BAND WIDTH": 106,
+                    "RESOLUTION": 10
+                },
+                "8A": {
+                    "NAME": "NIR NW",
+                    "ID": "B8A",
+                    "BAND CENTER": 864.7,
+                    "BAND WIDTH": 21,
+                    "RESOLUTION": 20
+                },
+                "9": {
+                    "NAME": "water vapor",
+                    "ID": "B09",
+                    "BAND CENTER": 945.1,
+                    "BAND WIDTH": 20,
+                    "RESOLUTION": 60
+                },
+                "10": {
+                    "NAME": "cirrus",
+                    "ID": "B10",
+                    "BAND CENTER": 1373.5,
+                    "BAND WIDTH": 31,
+                    "RESOLUTION": 60
+                },
+                "11": {
+                    "NAME": "SWIR",
+                    "ID": "B11",
+                    "BAND CENTER": 1613.7,
+                    "BAND WIDTH": 91,
+                    "RESOLUTION": 20
+                },
+                "12": {
+                    "NAME": "SWIR",
+                    "ID": "B12",
+                    "BAND CENTER": 2202.4,
+                    "BAND WIDTH": 175,
+                    "RESOLUTION": 20
+                }
+            }
+        }
+    },
+    "SENTINEL2B": {
+        "MSI": {
+            "BANDS": {
+                "1": {
+                    "NAME": "aerosol",
+                    "ID": "B01",
+                    "BAND CENTER": 442.2,
+                    "BAND WIDTH": 21,
+                    "RESOLUTION": 60
+                },
+                "2": {
+                    "NAME": "BLUE",
+                    "ID": "B02",
+                    "BAND CENTER": 492.1,
+                    "BAND WIDTH": 66,
+                    "RESOLUTION": 10
+                },
+                "3": {
+                    "NAME": "GREEN",
+                    "ID": "B03",
+                    "BAND CENTER": 559,
+                    "BAND WIDTH": 36,
+                    "RESOLUTION": 10
+                },
+                "4": {
+                    "NAME": "RED",
+                    "ID": "B04",
+                    "BAND CENTER": 664.9,
+                    "BAND WIDTH": 31,
+                    "RESOLUTION": 10
+                },
+                "5": {
+                    "NAME": "vegetation",
+                    "ID": "B05",
+                    "BAND CENTER": 703.8,
+                    "BAND WIDTH": 16,
+                    "RESOLUTION": 20
+                },
+                "6": {
+                    "NAME": "vegetation",
+                    "ID": "B06",
+                    "BAND CENTER": 739.1,
+                    "BAND WIDTH": 15,
+                    "RESOLUTION": 20
+                },
+                "7": {
+                    "NAME": "vegetation",
+                    "ID": "B07",
+                    "BAND CENTER": 779.7,
+                    "BAND WIDTH": 20,
+                    "RESOLUTION": 20
+                },
+                "8": {
+                    "NAME": "NIR",
+                    "ID": "B08",
+                    "BAND CENTER": 832.9,
+                    "BAND WIDTH": 106,
+                    "RESOLUTION": 10
+                },
+                "8A": {
+                    "NAME": "NIR NW",
+                    "ID": "B8A",
+                    "BAND CENTER": 864,
+                    "BAND WIDTH": 22,
+                    "RESOLUTION": 20
+                },
+                "9": {
+                    "NAME": "water vapor",
+                    "ID": "B09",
+                    "BAND CENTER": 943.3,
+                    "BAND WIDTH": 21,
+                    "RESOLUTION": 60
+                },
+                "10": {
+                    "NAME": "cirrus",
+                    "ID": "B10",
+                    "BAND CENTER": 1376.9,
+                    "BAND WIDTH": 30,
+                    "RESOLUTION": 60
+                },
+                "11": {
+                    "NAME": "SWIR",
+                    "ID": "B11",
+                    "BAND CENTER": 1610.4,
+                    "BAND WIDTH": 94,
+                    "RESOLUTION": 20
+                },
+                "12": {
+                    "NAME": "SWIR",
+                    "ID": "B12",
+                    "BAND CENTER": 2185.7,
+                    "BAND WIDTH": 185,
+                    "RESOLUTION": 20
+                }
+            }
+        }
+    }
+}

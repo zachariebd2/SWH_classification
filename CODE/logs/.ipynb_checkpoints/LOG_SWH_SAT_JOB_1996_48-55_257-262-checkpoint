@@ -1,0 +1,79 @@
+start
+
+/work/softs/rh8/spack_install/linux-rhel8-x86_64/gcc-8.5.0/lua-5.3.5-jrod3pug4gjtoktj35wsrwsbqjbmclv7/bin/lua: error loading module 'tcl2lua' from file '/work/softs/rh8/spack_install/linux-rhel8-x86_64/gcc-8.5.0/lmod-8.7.2-s64g775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/../lib/tcl2lua.so':
+	/work/softs/rh8/spack_install/linux-rhel8-x86_64/gcc-8.5.0/tcl-8.6.12-g3m5h2lyr2p7xjzfeiuazwn6li24oaik/lib/libtcl8.6.so: cannot read file data: Input/output error
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	...775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/utils.lua:856: in upvalue 'l_build_runTCLprog'
+	...775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/utils.lua:990: in function 'initialize_lmod'
+	...-s64g775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/lmod:353: in function 'main'
+	...-s64g775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/lmod:573: in main chunk
+	[C]: in ?
+/work/softs/rh8/spack_install/linux-rhel8-x86_64/gcc-8.5.0/lua-5.3.5-jrod3pug4gjtoktj35wsrwsbqjbmclv7/bin/lua: error loading module 'tcl2lua' from file '/work/softs/rh8/spack_install/linux-rhel8-x86_64/gcc-8.5.0/lmod-8.7.2-s64g775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/../lib/tcl2lua.so':
+	/work/softs/rh8/spack_install/linux-rhel8-x86_64/gcc-8.5.0/tcl-8.6.12-g3m5h2lyr2p7xjzfeiuazwn6li24oaik/lib/libtcl8.6.so: cannot read file data: Input/output error
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	...775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/utils.lua:856: in upvalue 'l_build_runTCLprog'
+	...775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/utils.lua:990: in function 'initialize_lmod'
+	...-s64g775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/lmod:353: in function 'main'
+	...-s64g775z6eco6er3cbdymgzlodxmis6x/lmod/lmod/libexec/lmod:573: in main chunk
+	[C]: in ?
+/var/spool/slurmd/job23750144/slurm_script: line 21: conda: command not found
+start get_swh_saturations.py
+/var/spool/slurmd/job23750144/slurm_script: line 27: python: command not found
+[2024-10-16 19:44:09.819029213+00:00] cnes_level2/barrouz/23750144:  Account (env) = cnes_level2
+[2024-10-16 19:44:09.820394520+00:00] cnes_level2/barrouz/23750144:     User (env) = barrouz
+[2024-10-16 19:44:09.821681147+00:00] cnes_level2/barrouz/23750144:        GroupId = cesbio(426000053)
+[2024-10-16 19:44:09.822969825+00:00] cnes_level2/barrouz/23750144:         UserId = barrouz(9134)
+[2024-10-16 19:44:09.824293572+00:00] cnes_level2/barrouz/23750144:        Account = cnes_level2
+[2024-10-16 19:44:09.825605079+00:00] cnes_level2/barrouz/23750144:        Account = cnes_level2
+[2024-10-16 19:44:09.826911417+00:00] cnes_level2/barrouz/23750144:      Partition = cpu2022
+[2024-10-16 19:44:09.828301014+00:00] cnes_level2/barrouz/23750144:            QOS = cpu_2022_64
+[2024-10-16 19:44:09.829733011+00:00] cnes_level2/barrouz/23750144:        JobName = SWH_SAT
+[2024-10-16 19:44:09.831133518+00:00] cnes_level2/barrouz/23750144:     SubmitTime = 2024-10-16T19:43:13
+[2024-10-16 19:44:09.832386816+00:00] cnes_level2/barrouz/23750144:        RunTime = 00:00:00
+[2024-10-16 19:44:09.834307522+00:00] cnes_level2/barrouz/23750144:      TimeLimit = 01:00:00
+[2024-10-16 19:44:09.835973628+00:00] cnes_level2/barrouz/23750144:   EligibleTime = 2024-10-16T19:43:13
+[2024-10-16 19:44:09.837443725+00:00] cnes_level2/barrouz/23750144:      StartTime = 2024-10-16T19:43:15
+[2024-10-16 19:44:09.838935332+00:00] cnes_level2/barrouz/23750144:        EndTime = 2024-10-16T20:43:15
+[2024-10-16 19:44:09.840252010+00:00] cnes_level2/barrouz/23750144:       ExitCode = 0:0
+[2024-10-16 19:44:09.841544287+00:00] cnes_level2/barrouz/23750144:       NodeList = trex083
+[2024-10-16 19:44:09.842846604+00:00] cnes_level2/barrouz/23750144:      BatchHost = trex083
+[2024-10-16 19:44:09.844253762+00:00] cnes_level2/barrouz/23750144:           TRES = 
+[2024-10-16 19:44:09.845552239+00:00] cnes_level2/barrouz/23750144:        Command = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/trex/get_swh_saturation_job.sh
+[2024-10-16 19:44:09.846943326+00:00] cnes_level2/barrouz/23750144:        WorkDir = /work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION
+[2024-10-16 19:44:09.848524943+00:00] cnes_level2/barrouz/23750144:         StdErr = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_1996_48-55_257-262
+[2024-10-16 19:44:09.849988550+00:00] cnes_level2/barrouz/23750144:         StdOut = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_1996_48-55_257-262
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 23750144
+JobID                : 23750144
+JobName              : SWH_SAT
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex083 (1)
+State                : FAILED  (Exitcode=127:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-16T19:43:13
+Start time           : 2024-10-16T19:43:15
+End time             : 2024-10-16T19:44:03
+Elapsed time         : 00:00:48  (Timelimit=01:00:00, Suspended=00:00:00)
+TEI                  : 0:00:48
+Command              : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/trex/get_swh_saturation_job.sh
+StdOut               : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_1996_48-55_257-262
+StdErr               : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_1996_48-55_257-262
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        FAILED      127:0  2024-10-16T19:43:15 2024-10-16T19:44:03 00:00:48  00:00.118  00:00:48     0.040546875K           0            0      1956K          0    trex083      1 00:00.043  trex083
+   extern  | extern       COMPLETED   0:0    2024-10-16T19:43:15 2024-10-16T19:44:05 00:00:50  00:00:00   00:00:50      0.04203125K       0.00M        0.00M      1740K          0    trex083      1 00:00:00   trex083
+

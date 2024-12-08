@@ -1,0 +1,64 @@
+start
+
+
+Note: the module "conda" cannot be unloaded because it was not loaded.
+
+load conda/22.11.1  : OK 
+envs_dirs : /work/scratch/env/barrouz/conda_env/
+pkgs_dirs : /work/scratch/env/barrouz/pkgs_conda
+start get_swh_saturations.py
+python: can't open file '/home/ad/barrouz/code/app/get_swh_saturations.py': [Errno 2] No such file or directory
+[2024-10-16 19:14:30.780158880+00:00] cnes_level2/barrouz/23739608:  Account (env) = cnes_level2
+[2024-10-16 19:14:30.781279766+00:00] cnes_level2/barrouz/23739608:     User (env) = barrouz
+[2024-10-16 19:14:30.782393753+00:00] cnes_level2/barrouz/23739608:        GroupId = cesbio(426000053)
+[2024-10-16 19:14:30.783510279+00:00] cnes_level2/barrouz/23739608:         UserId = barrouz(9134)
+[2024-10-16 19:14:30.784535086+00:00] cnes_level2/barrouz/23739608:        Account = cnes_level2
+[2024-10-16 19:14:30.785996662+00:00] cnes_level2/barrouz/23739608:        Account = cnes_level2
+[2024-10-16 19:14:30.787647697+00:00] cnes_level2/barrouz/23739608:      Partition = cpu2022
+[2024-10-16 19:14:30.788730793+00:00] cnes_level2/barrouz/23739608:            QOS = cpu_2022_64
+[2024-10-16 19:14:30.789789610+00:00] cnes_level2/barrouz/23739608:        JobName = SWH_SAT
+[2024-10-16 19:14:30.790754417+00:00] cnes_level2/barrouz/23739608:     SubmitTime = 2024-10-16T19:14:05
+[2024-10-16 19:14:30.791687744+00:00] cnes_level2/barrouz/23739608:        RunTime = 00:00:00
+[2024-10-16 19:14:30.792608571+00:00] cnes_level2/barrouz/23739608:      TimeLimit = 01:00:00
+[2024-10-16 19:14:30.793869878+00:00] cnes_level2/barrouz/23739608:   EligibleTime = 2024-10-16T19:14:05
+[2024-10-16 19:14:30.795236983+00:00] cnes_level2/barrouz/23739608:      StartTime = 2024-10-16T19:14:07
+[2024-10-16 19:14:30.796673279+00:00] cnes_level2/barrouz/23739608:        EndTime = 2024-10-16T20:14:07
+[2024-10-16 19:14:30.797821636+00:00] cnes_level2/barrouz/23739608:       ExitCode = 0:0
+[2024-10-16 19:14:30.799240211+00:00] cnes_level2/barrouz/23739608:       NodeList = trex088
+[2024-10-16 19:14:30.800669087+00:00] cnes_level2/barrouz/23739608:      BatchHost = trex088
+[2024-10-16 19:14:30.801754813+00:00] cnes_level2/barrouz/23739608:           TRES = 
+[2024-10-16 19:14:30.802860890+00:00] cnes_level2/barrouz/23739608:        Command = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/trex/get_swh_saturation_job.sh
+[2024-10-16 19:14:30.803913767+00:00] cnes_level2/barrouz/23739608:        WorkDir = /work/CAMPUS/etudes/Neige/CoSIMS/zacharie/PHD_ZBD_SNOW_CLASSIFICATION
+[2024-10-16 19:14:30.804970504+00:00] cnes_level2/barrouz/23739608:         StdErr = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_2005_48-55_257-262
+[2024-10-16 19:14:30.806267450+00:00] cnes_level2/barrouz/23739608:         StdOut = /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_2005_48-55_257-262
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 23739608
+JobID                : 23739608
+JobName              : SWH_SAT
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex088 (1)
+State                : FAILED  (Exitcode=2:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-16T19:14:05
+Start time           : 2024-10-16T19:14:07
+End time             : 2024-10-16T19:14:26
+Elapsed time         : 00:00:19  (Timelimit=01:00:00, Suspended=00:00:00)
+TEI                  : 0:00:19
+Command              : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/trex/get_swh_saturation_job.sh
+StdOut               : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_2005_48-55_257-262
+StdErr               : /home/ad/barrouz/zacharie/PHD_ZBD_SNOW_CLASSIFICATION/CODE/logs/LOG_SWH_SAT_JOB_2005_48-55_257-262
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        FAILED      2:0    2024-10-16T19:14:07 2024-10-16T19:14:26 00:00:19  00:01.616  00:00:19      0.01296875K           0            0      1960K          0    trex088      1 00:01.211  trex088
+   extern  | extern       COMPLETED   0:0    2024-10-16T19:14:07 2024-10-16T19:14:26 00:00:19  00:00.001  00:00:19       0.0134375K       0.00M        0.00M      1708K          0    trex088      1 00:00:00   trex088
+

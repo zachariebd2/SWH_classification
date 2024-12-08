@@ -1,0 +1,77 @@
+start
+
+
+Note: the module "conda" cannot be unloaded because it was not loaded.
+
+load conda/22.11.1  : OK 
+envs_dirs : /work/scratch/env/barrouz/conda_env/
+pkgs_dirs : /work/scratch/env/barrouz/pkgs_conda
+start get_patches.py
+/softs/rh8/conda-envs/pangeo_stable/lib/python3.11/site-packages/osgeo/gdal.py:312: FutureWarning: Neither gdal.UseExceptions() nor gdal.DontUseExceptions() has been explicitly called. In GDAL 4.0, exceptions will be enabled by default.
+  warnings.warn(
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+PARSE INPUT ARGUMENTS
+ACCESS CONFIGURATION FILE
+GET DATAFRAME
+[2024-10-02 19:29:23.781465830+00:00] cnes_level2/barrouz/22334558:  Account (env) = cnes_level2
+[2024-10-02 19:29:23.782816812+00:00] cnes_level2/barrouz/22334558:     User (env) = barrouz
+[2024-10-02 19:29:23.783798885+00:00] cnes_level2/barrouz/22334558:        GroupId = cesbio(426000053)
+[2024-10-02 19:29:23.784763079+00:00] cnes_level2/barrouz/22334558:         UserId = barrouz(9134)
+[2024-10-02 19:29:23.785723863+00:00] cnes_level2/barrouz/22334558:        Account = cnes_level2
+[2024-10-02 19:29:23.786700107+00:00] cnes_level2/barrouz/22334558:        Account = cnes_level2
+[2024-10-02 19:29:23.787687881+00:00] cnes_level2/barrouz/22334558:      Partition = cpu2022
+[2024-10-02 19:29:23.788698054+00:00] cnes_level2/barrouz/22334558:            QOS = cpu_2022_64
+[2024-10-02 19:29:23.789667378+00:00] cnes_level2/barrouz/22334558:        JobName = P0
+[2024-10-02 19:29:23.790664162+00:00] cnes_level2/barrouz/22334558:     SubmitTime = 2024-10-02T19:26:51
+[2024-10-02 19:29:23.791808754+00:00] cnes_level2/barrouz/22334558:        RunTime = 00:00:00
+[2024-10-02 19:29:23.792826358+00:00] cnes_level2/barrouz/22334558:      TimeLimit = 01:00:00
+[2024-10-02 19:29:23.793708982+00:00] cnes_level2/barrouz/22334558:   EligibleTime = 2024-10-02T19:26:51
+[2024-10-02 19:29:23.794605767+00:00] cnes_level2/barrouz/22334558:      StartTime = 2024-10-02T19:27:08
+[2024-10-02 19:29:23.795492281+00:00] cnes_level2/barrouz/22334558:        EndTime = 2024-10-02T20:27:08
+[2024-10-02 19:29:23.796429195+00:00] cnes_level2/barrouz/22334558:       ExitCode = 0:0
+[2024-10-02 19:29:23.797340289+00:00] cnes_level2/barrouz/22334558:       NodeList = trex044
+[2024-10-02 19:29:23.798280743+00:00] cnes_level2/barrouz/22334558:      BatchHost = trex044
+[2024-10-02 19:29:23.799203787+00:00] cnes_level2/barrouz/22334558:           TRES = 
+[2024-10-02 19:29:23.800111752+00:00] cnes_level2/barrouz/22334558:        Command = /home/ad/barrouz/code/trex/get_patches_job.sh
+[2024-10-02 19:29:23.801071106+00:00] cnes_level2/barrouz/22334558:        WorkDir = /home/ad/barrouz/code
+[2024-10-02 19:29:23.802011010+00:00] cnes_level2/barrouz/22334558:         StdErr = /home/ad/barrouz/code/logs/LOG_PATCHES_0_JOB
+[2024-10-02 19:29:23.802936934+00:00] cnes_level2/barrouz/22334558:         StdOut = /home/ad/barrouz/code/logs/LOG_PATCHES_0_JOB
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 22334558
+JobID                : 22334558
+JobName              : P0
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex044 (1)
+State                : COMPLETED  (Exitcode=0:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-02T19:26:51
+Start time           : 2024-10-02T19:27:08
+End time             : 2024-10-02T19:29:21
+Elapsed time         : 00:02:13  (Timelimit=01:00:00, Suspended=00:00:00)
+TEI                  : 0:08:52
+Command              : /home/ad/barrouz/code/trex/get_patches_job.sh
+StdOut               : /home/ad/barrouz/code/logs/LOG_PATCHES_0_JOB
+StdErr               : /home/ad/barrouz/code/logs/LOG_PATCHES_0_JOB
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        COMPLETED   0:0    2024-10-02T19:27:08 2024-10-02T19:29:21 00:02:13  01:56.633  00:08:52       0.5328125K    1780.86M      966.74M   1985544K          0    trex044      1 01:50.216  trex044
+   extern  | extern       COMPLETED   0:0    2024-10-02T19:27:08 2024-10-02T19:29:21 00:02:13  00:00.001  00:08:52       0.5346875K       0.00M        0.00M      1724K          0    trex044      1 00:00:00   trex044
+

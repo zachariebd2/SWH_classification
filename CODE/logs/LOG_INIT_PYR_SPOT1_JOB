@@ -1,0 +1,81 @@
+start
+
+
+Note: the module "conda" cannot be unloaded because it was not loaded.
+
+load conda/22.11.1  : OK 
+envs_dirs : /work/scratch/env/barrouz/conda_env/
+pkgs_dirs : /work/scratch/env/barrouz/pkgs_conda
+start unet_init.py
+/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: /work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/site-packages/torchvision/image.so: undefined symbol: _ZN5torch3jit17parseSchemaOrNameERKSs
+  warn(f"Failed to load image Python extension: {e}")
+/work/scratch/env/barrouz/conda_env/pl_lightning/lib/python3.8/site-packages/torch/nn/init.py:403: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+cpu
+PARSE INPUT ARGUMENTS
+ACCESS CONFIGURATION FILE
+GET DATAFRAME
+572 388.0
+572 388.0
+92 92
+normalization from training set
+training weigths
+tensor([0., 1., 2., 3.], dtype=torch.float64) 4 tensor([128256585,  29213587,  94805695,    487509]) tensor(252763376)
+tensor([  1.9670,   8.6356,   2.6610, 517.4794])
+validation weigths
+tensor([0., 1., 2., 3.], dtype=torch.float64) 4 tensor([14107965,  3527804, 10321477,    43938]) tensor(28001184)
+tensor([  1.9817,   7.9248,   2.7086, 636.2885])
+[2024-10-07 16:14:40.265133017+00:00] cnes_level2/barrouz/22713988:  Account (env) = cnes_level2
+[2024-10-07 16:14:40.266245666+00:00] cnes_level2/barrouz/22713988:     User (env) = barrouz
+[2024-10-07 16:14:40.267297455+00:00] cnes_level2/barrouz/22713988:        GroupId = cesbio(426000053)
+[2024-10-07 16:14:40.268399184+00:00] cnes_level2/barrouz/22713988:         UserId = barrouz(9134)
+[2024-10-07 16:14:40.269500653+00:00] cnes_level2/barrouz/22713988:        Account = cnes_level2
+[2024-10-07 16:14:40.270613952+00:00] cnes_level2/barrouz/22713988:        Account = cnes_level2
+[2024-10-07 16:14:40.271691611+00:00] cnes_level2/barrouz/22713988:      Partition = cpu2022
+[2024-10-07 16:14:40.272739821+00:00] cnes_level2/barrouz/22713988:            QOS = cpu_2022_64
+[2024-10-07 16:14:40.273800530+00:00] cnes_level2/barrouz/22713988:        JobName = INIT_PYR_SPOT1
+[2024-10-07 16:14:40.274859990+00:00] cnes_level2/barrouz/22713988:     SubmitTime = 2024-10-07T15:32:29
+[2024-10-07 16:14:40.275966969+00:00] cnes_level2/barrouz/22713988:        RunTime = 00:00:02
+[2024-10-07 16:14:40.277137747+00:00] cnes_level2/barrouz/22713988:      TimeLimit = 00:30:00
+[2024-10-07 16:14:40.278234866+00:00] cnes_level2/barrouz/22713988:   EligibleTime = 2024-10-07T15:32:29
+[2024-10-07 16:14:40.279285285+00:00] cnes_level2/barrouz/22713988:      StartTime = 2024-10-07T15:51:58
+[2024-10-07 16:14:40.280306965+00:00] cnes_level2/barrouz/22713988:        EndTime = 2024-10-07T16:21:58
+[2024-10-07 16:14:40.281368305+00:00] cnes_level2/barrouz/22713988:       ExitCode = 0:0
+[2024-10-07 16:14:40.282467834+00:00] cnes_level2/barrouz/22713988:       NodeList = trex021
+[2024-10-07 16:14:40.283530503+00:00] cnes_level2/barrouz/22713988:      BatchHost = trex021
+[2024-10-07 16:14:40.284609382+00:00] cnes_level2/barrouz/22713988:           TRES = 
+[2024-10-07 16:14:40.285679591+00:00] cnes_level2/barrouz/22713988:        Command = /home/ad/barrouz/code/trex/run_unet_init_job.sh
+[2024-10-07 16:14:40.286737791+00:00] cnes_level2/barrouz/22713988:        WorkDir = /home/ad/barrouz/code
+[2024-10-07 16:14:40.287834500+00:00] cnes_level2/barrouz/22713988:         StdErr = /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+[2024-10-07 16:14:40.288951149+00:00] cnes_level2/barrouz/22713988:         StdOut = /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+
+#########################################
+#        EVIDEN - CNES                  #
+#        Job Accounting                 #
+#########################################
+Cluster              : trex
+JobIDRaw             : 22713988
+JobID                : 22713988
+JobName              : INIT_PYR_SPOT1
+Account              : cnes_level2
+User                 : barrouz(9134), cesbio(426000053)
+Partition            : cpu2022
+QOS                  : cpu_2022_64
+Nodelist             : trex021 (1)
+State                : COMPLETED  (Exitcode=0:0, DerivedExitCode=0:0, Restarts=0)
+Submit date          : 2024-10-07T15:32:29
+Start time           : 2024-10-07T15:51:58
+End time             : 2024-10-07T16:14:39
+Elapsed time         : 00:22:41  (Timelimit=00:30:00, Suspended=00:00:00)
+TEI                  : 3:01:28
+Command              : /home/ad/barrouz/code/trex/run_unet_init_job.sh
+StdOut               : /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+StdErr               : /home/ad/barrouz/code/logs/LOG_INIT_PYR_SPOT1_JOB
+
+STEP(s) : 2
+--------- 
+   StepID  | JobName      State       Exit   Start               End                 Elapsed   TotalCPU   CPUTime    ConsumedEnergy MaxDiskRead MaxDiskWrite     MaxRSS MaxRSSTask MaxRSSNode NNodes UserCPU    NodeList
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   batch   | batch        COMPLETED   0:0    2024-10-07T15:51:58 2024-10-07T16:14:39 00:22:41  04:39.100  03:01:28        11.78625K   47211.74M        0.01M  44565520K          0    trex021      1 02:55.800  trex021
+   extern  | extern       COMPLETED   0:0    2024-10-07T15:51:58 2024-10-07T16:14:39 00:22:41  00:00:00   03:01:28       11.803125K       0.00M        0.00M      1748K          0    trex021      1 00:00:00   trex021
+
